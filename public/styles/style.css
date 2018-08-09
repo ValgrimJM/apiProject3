@@ -1,5 +1,273 @@
-h1 {
-  color: darkcyan; }
+header, footer {
+  font-family: 'Shrikhand', cursive;
+  font-weight: bold;
+  display: flex;
+  background-color: #282521;
+  width: 100%; }
+
+a {
+  text-decoration: none; }
+
+nav {
+  width: 100%;
+  display: inline-block;
+  height: auto;
+  padding: 10px 0 10px 0;
+  text-align: center;
+  float: left; }
+
+nav a {
+  padding: 0 15px;
+  line-height: 40px;
+  font-size: 30px;
+  color: #806143; }
+
+nav a:hover {
+  color: #5E462F; }
+
+ul {
+  text-decoration: none; }
+
+.search {
+  width: 250px;
+  right: 30px;
+  top: 10px;
+  z-index: 3;
+  float: right;
+  position: absolute; }
+
+.search input {
+  font-family: 'Montserrat', san-serif;
+  height: 40px;
+  border: none;
+  background-color: #806143;
+  color: #FFFFFF;
+  border-radius: 5px 0 0 5px;
+  padding: 0 0 0 10px;
+  float: right; }
+
+.search input:focus {
+  outline-width: 0px;
+  color: #FFFFFF; }
+
+.search input::placeholder {
+  color: #FFFFFF; }
+
+.search button {
+  height: 40px;
+  width: 40px;
+  border: none;
+  float: right;
+  border-radius: 0 5px 5px 0;
+  background-color: #603A15; }
+
+.search button:hover {
+  background-color: #54381C;
+  color: #FFFFFF; }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1; }
+
+.sticky.beerImage {
+  position: fixed;
+  top: 60px;
+  width: 27.5%;
+  z-index: -1;
+  height: -webkit-fill-available; }
+
+.sticky + .bodyWrapper {
+  padding-top: 60px; }
+
+aside {
+  float: left;
+  width: 33%;
+  background-color: #5E5131;
+  padding: 10px;
+  text-align: center; }
+
+aside img {
+  width: 40%;
+  height: auto; }
+
+.beerTextInfo {
+  float: right;
+  background-color: #5E4731;
+  width: 67%;
+  text-align: center;
+  min-height: 674px; }
+
+.beerTextInfo h1 {
+  font-family: 'Shrikhand', cursive;
+  font-weight: bold;
+  font-size: 2.5em;
+  color: #42372C;
+  padding: 14px 10px 10px 10px; }
+
+.beerTextInfo p, h4, h3 {
+  font-family: 'Montserrat', san-serif;
+  padding: 5px 0; }
+
+.bodyWrapper {
+  height: 100%;
+  width: 83.3%;
+  margin-left: auto;
+  margin-right: auto; }
+
+.maltDiv, .yeastDiv, .hopDiv, .foodDiv, .foodDiv a {
+  display: inline-block; }
+
+.hopDiv {
+  width: 33%;
+  float: left; }
+
+.maltDiv {
+  width: 33%;
+  float: left; }
+
+.yeastDiv {
+  width: 33%;
+  float: left; }
+
+.foodDiv {
+  width: 100%;
+  margin-bottom: 10px; }
+
+.foodDiv h3 {
+  font-size: 2vw; }
+
+.foodDiv a {
+  font-family: 'Shrikhand', cursive;
+  width: 100%;
+  text-decoration: none;
+  color: #806143;
+  font-size: 1.5vw; }
+
+.foodDiv a:hover {
+  color: #282521; }
+
+.infoBody {
+  width: 83.33%;
+  margin-left: auto;
+  margin-right: auto; }
+
+.beerList {
+  text-align: center; }
+
+.listContainer {
+  width: 20%;
+  position: relative;
+  text-align: center;
+  display: inline-block; }
+
+.listContainer .overlay {
+  height: 300px;
+  top: 0; }
+
+.listImage {
+  height: 300px;
+  width: 50%;
+  padding: 10px 10px; }
+
+.pageButtons, .searchButtons {
+  text-align: center;
+  padding: 10px 0 10px 0; }
+
+.pageButtons button, .searchButtons button {
+  height: 40px;
+  width: 120px;
+  border: none;
+  background-color: #603A15;
+  font-family: 'Shrikhand', cursive;
+  font-size: 20px; }
+
+.searchButtons button {
+  font-size: 14px; }
+
+.active {
+  background-color: #282521 !important;
+  color: white; }
+
+.active, .btn:hover {
+  background-color: red; }
+
+.pageButtons button:hover:not([disabled]), .searchButtons button:hover:not([disabled]) {
+  background-color: #54381C;
+  color: #FFFFFF; }
+
+.pageButtons button:disabled {
+  background-color: #665340;
+  color: graytext; }
+
+.nextBut, .foodSearch {
+  border-radius: 0 5px 5px 0; }
+
+.prevBut, .nameSearch {
+  border-radius: 5px 0 0 5px; }
+
+* {
+  box-sizing: border-box;
+  margin: 0 0 0 0; }
+
+button {
+  cursor: pointer; }
+
+button:focus {
+  outline-width: 0px; }
 
 body {
-  margin: 0; }
+  margin: 0;
+  background-color: #42372C; }
+
+.photoBar {
+  width: 100%;
+  height: 520px;
+  text-align: center;
+  background-color: #5E4731;
+  padding: 10px 0;
+  overflow: hidden; }
+
+.container {
+  position: relative;
+  text-align: center;
+  display: inline-block; }
+
+.image {
+  max-width: 100%;
+  height: 500px;
+  padding: 10px 10px; }
+
+.overlay {
+  position: absolute;
+  top: -10px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 520px;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #5E3131; }
+
+.container:hover .overlay, .listContainer:hover .overlay {
+  opacity: 0.85; }
+
+.text {
+  font-family: 'Shrikhand', cursive;
+  color: white;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center; }
+
+.text h2 {
+  font-size: 2vw; }
+
+.text p {
+  font-family: 'Montserrat', san-serif;
+  font-size: 15px; }

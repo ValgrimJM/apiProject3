@@ -1,0 +1,97 @@
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+.sticky.beerImage{
+position: fixed;
+  top: 60px;
+  width: 27.5%;
+  z-index: -1;
+  height: -webkit-fill-available;
+}
+
+.sticky + .bodyWrapper{
+	padding-top: 60px;
+}
+aside{
+	float: left;
+	width: 33%;
+	
+	background-color: #5E5131;
+	padding: 10px;
+	text-align: center;
+	
+}
+aside img{
+	width: 40%;
+	height: auto;
+	
+
+}
+.beerTextInfo{
+	float: right;
+	background-color: #5E4731;
+	width: 67%;
+	text-align: center;
+	min-height: 674px;
+}
+.beerTextInfo h1{
+	font-family: 'Shrikhand', cursive;
+	font-weight: bold;
+	font-size: 2.5em;
+	color: #42372C;
+	
+
+
+	padding: 14px 10px 10px 10px;
+}
+.beerTextInfo p, h4, h3{
+	font-family: 'Montserrat', san-serif;
+	padding: 5px 0;
+}
+.bodyWrapper{
+	height: 100%;
+	width: 83.3%;
+	margin-left:auto; 
+	margin-right: auto;
+}
+.maltDiv, .yeastDiv, .hopDiv, .foodDiv, .foodDiv a{
+	display: inline-block;
+}
+.hopDiv{
+	width: 33%;
+	float: left;
+}
+.maltDiv{
+	width: 33%;
+	float: left;
+}
+.yeastDiv{
+	width: 33%;
+	float: left;
+}
+.foodDiv{
+	width: 100%;
+	margin-bottom: 10px;
+}
+.foodDiv h3{
+	font-size: 2vw;
+}
+.foodDiv a{
+	font-family: 'Shrikhand', cursive;
+	width: 100%;
+	text-decoration: none;
+	color: #806143;
+	font-size: 1.5vw;
+}
+.foodDiv a:hover{
+	color: #282521;
+}
+.infoBody{
+	width: 83.33%;
+	margin-left:auto; 
+	margin-right: auto;
+
+}

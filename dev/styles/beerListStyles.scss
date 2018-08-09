@@ -1,0 +1,55 @@
+.beerList{
+	text-align: center;
+}
+.listContainer{
+	width: 20%;
+  	position: relative;
+  	text-align: center;
+  	display: inline-block;
+}
+.listContainer .overlay{
+	height: 300px;
+	top: 0;
+}
+.listImage{
+	height: 300px;
+	width: 50%;
+  	padding: 10px 10px;
+}
+.pageButtons, .searchButtons{
+	text-align: center;
+	padding: 10px 0 10px 0;
+}
+.pageButtons button, .searchButtons button{
+	height: 40px;
+	width: 120px;
+	border: none;
+	background-color: #603A15;
+	font-family: 'Shrikhand', cursive;
+	font-size: 20px;
+}
+.searchButtons button{
+	font-size: 14px;
+}
+.active{
+	background-color: #282521 !important;
+	color: white;
+}
+.active, .btn:hover{
+	background-color:red;
+}
+
+.pageButtons button:hover:not([disabled]), .searchButtons button:hover:not([disabled]){
+		background-color: #54381C;
+	color: #FFFFFF;
+}
+.pageButtons button:disabled{
+	background-color: #665340;
+	color: graytext;
+}
+.nextBut, .foodSearch{
+	border-radius: 0 5px 5px 0;
+}
+.prevBut, .nameSearch{
+	border-radius: 5px 0 0 5px;
+}

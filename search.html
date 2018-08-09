@@ -1,29 +1,28 @@
-
-<!--
-Name: James David MacDonald
-Start Date: June 14th, 2018
-Project 3 - Craft Beer: Home Page
--->
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>James MacDonald Project 3 - Craft Beer</title>
+	<title>James MacDonald Project 3 - Craft Beer: Beer List</title>
 	<link rel="stylesheet" href="public/styles/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Montserrat|Shrikhand" rel="stylesheet">
 	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
 </head>
 <body>
-	<!-- Header bar + hyperlinks -->
 	<div id="header-placeholder">
 	</div>
-	<section class="photoBar">
-	</section>
-	<!-- Footer bar -->
+	<div class="bodyWrapper">
+		<div class="searchButtons" id="searchButtons">
+			<button class="nameSearch btn active">Name</button>
+			<button class="hopsSearch btn">Hops</button>
+			<button class="maltSearch btn">Malt</button>
+			<button class="foodSearch btn">Food Pairings</button>
+		</div>
+		<section class="beerList">
+		</section>
+	</div>
 	<div id="footer-placeholder">
 	</div>
 	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-	<script src="public/scripts/app.js"></script>
-
+	<script src="public/scripts/search.js"></script>
 </body>
 </html>

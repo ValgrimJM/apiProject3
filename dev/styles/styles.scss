@@ -1,7 +1,69 @@
-h1 {
-	color: darkcyan;
+*{
+	box-sizing: border-box;
+	margin: 0 0 0 0;
 }
-
+button{
+	cursor: pointer;
+}
+button:focus{
+	 outline-width: 0px;
+	}
 body {
 	margin: 0;
+	background-color: #42372C;
+}
+.photoBar{
+	width: 100%;
+	height: 520px;
+	text-align: center;
+	background-color: #5E4731;
+	padding: 10px 0;
+	overflow: hidden;
+}
+.container {
+  position: relative;
+  text-align: center;
+  display: inline-block;
+}
+
+.image {
+  max-width: 100%;
+  height: 500px;
+  padding: 10px 10px;
+}
+
+.overlay {
+  position: absolute;
+  top: -10px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 520px;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #5E3131;
+}
+
+.container:hover .overlay , .listContainer:hover .overlay{
+  opacity: 0.85;
+}
+
+.text {
+  font-family: 'Shrikhand', cursive;
+  color: white;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.text h2{
+	font-size: 2vw;
+}
+.text p{
+	font-family: 'Montserrat', san-serif;
+	font-size: 15px;
 }
