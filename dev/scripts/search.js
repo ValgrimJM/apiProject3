@@ -109,7 +109,7 @@ search.displayBeers = (beerObj) =>{
 		var $image = $("<img>").addClass("listImage").attr("src", beer.image_url);
 		var $textDiv = $("<div>").addClass("text").append($title, $tagline)
 		var $overlayDiv = $("<div>").addClass("overlay").append($textDiv);
-		var $linkEl = $("<a>").attr("href", "beerinfo.html?id=" + beer.id).append($overlayDiv);
+		var $linkEl = $("<a>").attr("href", "beerInfo.html?id=" + beer.id).append($overlayDiv);
 		var $containerDiv = $("<div>").addClass("listContainer").append($image, $linkEl);
 		$(".beerList").append($containerDiv);
 	});
