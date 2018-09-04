@@ -21,7 +21,7 @@ beer.init = () => {
 				var $image = $("<img>").addClass("image").attr("src", res[0].image_url);
 				var $textDiv = $("<div>").addClass("text").append($title, $tagline)
 				var $overlayDiv = $("<div>").addClass("overlay").append($textDiv);
-				var $linkEl = $("<a>").attr("href", "beerinfo.html?id=" + res[0].id).append($overlayDiv);
+				var $linkEl = $("<a>").attr("href", "beerInfo.html?id=" + res[0].id).append($overlayDiv);
 				var $containerDiv = $("<div>").addClass("container").append($image, $linkEl);
 				$(".container").css("width", `${elementWidth}%`);
 				$(".photoBar").append($containerDiv);
